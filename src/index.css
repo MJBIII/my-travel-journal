@@ -1,0 +1,292 @@
+/* Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap');
+
+/* General Styles */
+body {
+  background-color: #f7f7f7;
+  color: #333333;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0077b6;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar h1 span {
+  margin-right: 10px;
+}
+
+/* Navbar Buttons */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.auth-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-btn:hover {
+  background-color: #45a049;
+}
+
+.auth-btn:active {
+  background-color: #3e8e41;
+}
+.auth-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card */
+.card {
+  width: 300px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image */
+.card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  transition: transform 0.4s ease, opacity 0.4s ease; /* Smooth hover effects */
+}
+
+.card img:hover {
+  transform: scale(1.1); /* Slightly enlarge the image */
+  opacity: 0.9; /* Fade effect on hover */
+}
+
+/* Card Title */
+.card h2 {
+  color: #0077b6;
+  margin: 10px 0;
+}
+
+/* Card Description */
+.card p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  padding: 0 10px 10px;
+}
+
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1517849845537-4d257902454a?crop=entropy&cs=tinysrgb&w=1200');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.auth-one {
+  position: absolute;
+  top: 10px;
+  right: 80px;
+  background-color: #FF6F61;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.auth-two {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #FF6F61;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0077b6;
+  color: white;
+  margin-top: 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.footer .socials a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+
+
+.tracker {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tracker h3 {
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+progress {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #f3f3f3;
+}
+
+progress::-webkit-progress-value {
+  background-color: #0077b6;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.card {
+  animation: slideIn 0.5s ease forwards;
+}
+
+.hero {
+  animation: fadeIn 1s ease;
+}
+
+/* Journal Form */
+.journal-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.journal-form h2 {
+  color: #0077b6;
+  margin-bottom: 15px;
+}
+
+.journal-form input, .journal-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.journal-form button {
+  background-color: #0077b6;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.journal-form button:hover {
+  background-color: #005f8d;
+}
+
+/* Journal Entries */
+.journal-entries {
+  margin-top: 20px;
+}
+
+.journal-entry {
+  background-color: #f3f3f3;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.journal-entry h3 {
+  color: #FF6F61;
+  margin-bottom: 5px;
+}
+
+.journal-entry p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
